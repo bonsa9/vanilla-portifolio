@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.grid-style {
+  @apply flex h-[179px] w-[80%] md:w-full m-auto hover:scale-[1.05] cursor-pointer  bg-no-repeat bg-grid-bg-col-100 border-grid-bg-col-200 border-t-4 rounded-lg bg-center bg-grid-img;
+}
+
+.project-img{
+    @apply bg-[#2B0B3A] rounded-xl
+}
+
+@keyframes onLoadAnimation {
+0%{
+    transform: translate(-500px);
+}
+100%{
+    transform: translate(0px);
+}
+}
+
+.img-on-load-animation{
+    animation: onLoadAnimation 0.7s linear 1 both ;
+}
